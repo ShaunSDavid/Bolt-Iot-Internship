@@ -7,36 +7,55 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <div class="header">
       <h1>ArtFusion</h1>
       <h2>A Jquery image Gallery with a Thumbnail Carousel</h2>
     </div>
     <br />
+    <!-- Gallery Section -->
     <div class="gallery">
+      <!-- Buttons Section -->
       <div class="buttons">
+        <!-- Button to display thumbnails -->
         <button type="button" id="showthumb" onclick="displayThumbnail()">
           <img src="images/gallery-thumbnails.png" alt="" />
         </button>
+        <!-- Button to remove thumbnails -->
         <button type="button" id="showthumb" onclick="removeThumbnail()">
           <img src="images/remove.png" alt="" />
         </button>
       </div>
+
+      <!-- Thumbnails Section -->
       <div class="thumbnails" id="thumbnail-container">
         <div class="thumbnail-images">
           <!-- Thumbnails dynamically generated using JavaScript -->
         </div>
       </div>
+
+      <!-- Full-size Image Section -->
       <div class="full-image">
+        <!-- Loading icon displayed while the image is loading -->
         <div class="loading-icon"></div>
+        <!-- Button to navigate to the previous image -->
         <button class="prev" onclick="previmg()">&#10094;</button>
+        <!-- Full-size image displayed here -->
         <img src="images/pictures/1.jpg" alt="Full-size Image" id="fullImage" />
+        <!-- Button to navigate to the next image -->
         <button class="next" onclick="nextimg()">&#10095;</button>
       </div>
+
+      <!-- Caption Section -->
       <div id="caption">A PLAINTFUL STORY FROM A SISTERING VALE</div>
     </div>
     <br />
     <br />
+
+    <!-- Footer Section -->
     <div class="footer">&copy; Copyright Reserved by ArtFusion</div>
+
+    <!-- JavaScript file included -->
     <script src="script.js"></script>
   </body>
 </html>
