@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Gallery</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>ArtFusion</h1>
+      <h2>A Jquery image Gallery with a Thumbnail Carousel</h2>
+    </div>
+    <br />
+    <div class="gallery">
+      <div class="buttons">
+        <button type="button" id="showthumb" onclick="displayThumbnail()">
+          <img src="images/gallery-thumbnails.png" alt="" />
+        </button>
+        <button type="button" id="showthumb" onclick="removeThumbnail()">
+          <img src="images/remove.png" alt="" />
+        </button>
+      </div>
+      <div class="thumbnails" id="thumbnail-container">
+        <div class="thumbnail-images">
+          <!-- Thumbnails dynamically generated using JavaScript -->
+        </div>
+      </div>
+      <div class="full-image">
+        <div class="loading-icon"></div>
+        <button class="prev" onclick="previmg()">&#10094;</button>
+        <img src="images/pictures/1.jpg" alt="Full-size Image" id="fullImage" />
+        <button class="next" onclick="nextimg()">&#10095;</button>
+      </div>
+      <div id="caption">A PLAINTFUL STORY FROM A SISTERING VALE</div>
+    </div>
+    <br />
+    <br />
+    <div class="footer">&copy; Copyright Reserved by ArtFusion</div>
+    <script src="script.js"></script>
+  </body>
+</html>
