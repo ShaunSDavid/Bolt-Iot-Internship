@@ -1,0 +1,436 @@
+body {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#myLinks a:hover {
+    color: #0b8905;
+    font-weight: 500;
+}
+
+#click:hover{
+    color:black;
+}
+.logo {
+    margin-right: auto;
+    padding: 5px 0px 4px 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    color: grey;
+    margin: 0px 200px;
+}
+
+#myLinks {
+    margin-right: 20px; /* Add this line */
+}
+
+.toggledNav a {
+    display: none;
+    color: #0b8905;
+}
+
+.menu-change {
+    height: 35px;
+    width: 35px;
+}
+
+.menu-change:hover{
+    background-color: rgba(207, 202, 202, 0.693);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav span {
+    margin-right: 30px;
+}
+
+#darkbut {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding-left: 1px;
+    margin-left: 20px;
+}
+
+#darkbut img {
+    text-align: center;
+    margin-left: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+#darkbut:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.bg-image {
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+}
+
+.image-text {
+    font-size: 1.6em;
+    letter-spacing: 1.2px;
+    line-height: 68px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.about-title,
+.awards-title,
+.contact-title {
+    color: #0b8905;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.description,
+.vision-text,
+.mission-text {
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+}
+
+.description {
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.vision-and-mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vision-and-mission img {
+    width: 400px;
+    height: 300px;
+    margin: 0px 100px 10px 100px;
+    border-radius: 10px;
+}
+
+.vision-title,
+.vision-text,
+.mission-title,
+.mission-text {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#awards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.awards4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#awards img {
+    height: 200px;
+    width: 280px;
+}
+
+.below-awards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    font-size: 10px;
+}
+
+.award1-title {
+    font-size: 12px;
+}
+
+#contact {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 25px;
+    overflow-x: hidden;
+}
+
+.location {
+    color: rgb(99, 99, 99);
+    margin-bottom: 20px;
+    width: 450px;
+    margin-left: 50px;
+    float: right;
+}
+
+.location-title {
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.hubspot-form {
+    width: 450px;
+    float: left;
+}
+
+.location img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contactus {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(14, 94, 14);
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer img {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.menu-change img {
+    margin-top: 0%;
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+    .vision-and-mission img {
+        width: 350px;
+        height: 270px;
+        margin: 20px;
+    }
+
+    .vision-title,
+    .vision-text,
+    .mission-title,
+    .mission-text {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 350px;
+    }
+
+    .awards4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: start;
+        flex-flow: wrap;
+    }
+
+    .location {
+        color: rgb(99, 99, 99);
+        margin-bottom: 20px;
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 30px;
+        float: right;
+    }
+
+    .hubspot-form {
+        width: 350px;
+        align-self: center;
+    }
+
+    .nav {
+        margin: 0px 100px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu-change {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        margin: 0px;
+    }
+
+    .nav span {
+        margin-right: 10px;
+    }
+
+    .image-text {
+        font-size: 1.2em;
+        letter-spacing: 1.2px;
+        line-height: 26px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #darkbut{
+        height: 35px;
+        width: 35px;
+    }
+    #darkbut img {
+        text-align: center;
+        margin-left: 0px;
+        height: 35px;
+        width: 35px;
+    }
+    
+    .vision-and-mission {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission {
+        margin-top: 25px;
+        margin-right: 15px;
+    }
+
+    .vision-and-mission img {
+        width: 300px;
+        height: 200px;
+        margin: 0px;
+    }
+
+    .vision-title,
+    .vision-text,
+    .mission-title,
+    .mission-text {
+        margin-bottom: 20px;
+        margin-left: 0px;
+        width: 300px;
+    }
+
+    .awards4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hubspot-form {
+        width: 300px;
+        align-self: center;
+    }
+
+    .location {
+        color: rgb(99, 99, 99);
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .location-name {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .address {
+        text-align: justify;
+    }
+
+    .mission {
+        margin-left: 15px;
+    }
+
+    .location-title {
+        text-align: center;
+    }
+
+    .toggledNav a {
+        display: block;
+        color: rgb(99, 99, 99);
+        text-align: right;
+        margin-right: 15px;
+        padding-bottom: 5px;
+    }
+
+    .toggledNav a span {
+        font-size: 20px;
+    }
+
+    .toggledNav {
+        display: none;
+        padding-bottom: 4px;
+    }
+
+    #myLinks {
+        display: none;
+    }
+
+    .footer {
+        color: white;
+        display: flex;
+        padding: 20px;
+    }
+
+    .footer img {
+        height: 15px;
+        width: 15px;
+        margin: 5px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .toggledNav a:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+    .logo {
+        padding-left: 4px;
+    }
+}
